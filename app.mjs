@@ -22,7 +22,9 @@ const main = async () => {
 
   relay.connect();
 
-  const sub = relay.sub([{}]);
+  const sub = relay.sub([{
+    kinds: [0, 1],
+  }]);
 
   sub.on("event", async (ev) => {
     if (ev.kind === 0 || ev.kind === 1) {
