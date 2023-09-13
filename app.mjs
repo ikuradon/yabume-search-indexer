@@ -23,11 +23,11 @@ const main = async () => {
   relay.connect();
 
   const sub = relay.sub([{
-    kinds: [0, 1],
+    kinds: [0, 1, 42],
   }]);
 
   sub.on("event", async (ev) => {
-    if (ev.kind === 0 || ev.kind === 1) {
+    if (ev.kind === 0 || ev.kind === 1 || ev.kind === 42) {
       let response = await mIndex.addDocuments(ev);
       console.log(response);
     }
