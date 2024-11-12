@@ -11,11 +11,10 @@
     "useTabs": false
   },
   "imports": {
-    "@nostr-dev-kit/ndk": "npm:@nostr-dev-kit/ndk@2.4.0",
+    "@nostr-dev-kit/ndk": "npm:@nostr-dev-kit/ndk@2.10.5",
     "chalk": "npm:chalk@5.3.0",
-    "date-fns": "npm:date-fns@3.2.0",
-    "dotenv": "https://deno.land/std@0.212.0/dotenv/mod.ts",
-    "meilisearch": "npm:meilisearch@0.37.0"
+    "date-fns": "npm:date-fns@4.1.0",
+    "meilisearch": "npm:meilisearch@0.45.0"
   },
   "lint": {
     "include": [
@@ -31,7 +30,7 @@
     }
   },
   "tasks": {
-    "dev": "deno run --allow-env --allow-net --allow-read --allow-write --watch src/app.ts",
-    "start": "deno run --allow-env --allow-net --allow-read --allow-write src/app.ts"
+    "dev": "deno run --env --allow-env --allow-net --allow-read --allow-write --watch src/app.ts",
+    "start": "deno run --env --allow-env --allow-net --allow-read --allow-write src/app.ts"
   }
 }
