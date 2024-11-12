@@ -1,6 +1,5 @@
 import NDK, { NDKEvent, type NDKRelay } from '@nostr-dev-kit/ndk';
 import chalk from 'chalk';
-import * as dotenv from 'dotenv';
 import { getUnixTime } from 'date-fns';
 import { MeiliSearch } from 'meilisearch';
 
@@ -23,8 +22,6 @@ const getEnv = (key: string) => {
 };
 
 (async (_) => {
-  dotenv.loadSync({ export: true });
-
   const RELAY_URL = getEnv('RELAY_URL');
   const MEILISEARCH_URL = getEnv('MEILISEARCH_URL');
   const MEILISEARCH_KEY = getEnv('MEILISEARCH_KEY');
