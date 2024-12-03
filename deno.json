@@ -11,10 +11,10 @@
     "useTabs": false
   },
   "imports": {
-    "@nostr-dev-kit/ndk": "npm:@nostr-dev-kit/ndk@2.10.5",
+    "@nostr-dev-kit/ndk": "npm:@nostr-dev-kit/ndk@^2.10.7",
     "chalk": "npm:chalk@5.3.0",
     "date-fns": "npm:date-fns@4.1.0",
-    "meilisearch": "npm:meilisearch@0.45.0"
+    "meilisearch": "npm:meilisearch@^0.46.0"
   },
   "lint": {
     "include": [

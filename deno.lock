@@ -1,10 +1,10 @@
 {
   "version": "4",
   "specifiers": {
-    "npm:@nostr-dev-kit/ndk@2.10.5": "2.10.5",
+    "npm:@nostr-dev-kit/ndk@^2.10.7": "2.10.7",
     "npm:chalk@5.3.0": "5.3.0",
     "npm:date-fns@4.1.0": "4.1.0",
-    "npm:meilisearch@0.45.0": "0.45.0"
+    "npm:meilisearch@0.46": "0.46.0"
   },
   "npm": {
     "@noble/ciphers@0.5.3": {
@@ -22,10 +22,10 @@
         "@noble/hashes@1.3.2"
       ]
     },
-    "@noble/curves@1.6.0": {
-      "integrity": "sha512-TlaHRXDehJuRNR9TfZDNQ45mMEd5dwUwmicsafcIX4SsNiqnCHKjE/1alYPd/lDRVhxdhUAlv8uEhMCI5zjIJQ==",
+    "@noble/curves@1.7.0": {
+      "integrity": "sha512-UTMhXK9SeDhFJVrHeUJ5uZlI6ajXg10O6Ddocf9S6GjbSBVZsJo88HzKwXznNfGpMTRDyJkqMjNDPYgf0qFWnw==",
       "dependencies": [
-        "@noble/hashes@1.5.0"
+        "@noble/hashes@1.6.0"
       ]
     },
     "@noble/hashes@1.3.1": {
@@ -34,19 +34,22 @@
     "@noble/hashes@1.3.2": {
       "integrity": "sha512-MVC8EAQp7MvEcm30KWENFjgR+Mkmf+D189XJTkFIlwohU5hcBbn1ZkKq7KVTi2Hme3PMGF390DaL52beVrIihQ=="
     },
-    "@noble/hashes@1.5.0": {
-      "integrity": "sha512-1j6kQFb7QRru7eKN3ZDvRcP13rugwdxZqCjbiAVZfIJwgj2A65UmT4TgARXGlXgnRkORLTDTrO19ZErt7+QXgA=="
+    "@noble/hashes@1.6.0": {
+      "integrity": "sha512-YUULf0Uk4/mAA89w+k3+yUYh6NrEvxZa5T6SY3wlMvE2chHkxFUUIDI8/XW1QSC357iA5pSnqt7XEhvFOqmDyQ=="
+    },
+    "@noble/hashes@1.6.1": {
+      "integrity": "sha512-pq5D8h10hHBjyqX+cfBm0i8JUXJ0UhczFc4r74zbuT9XgewFo2E3J1cOaGtdZynILNmQ685YWGzGE1Zv6io50w=="
     },
     "@noble/secp256k1@2.1.0": {
       "integrity": "sha512-XLEQQNdablO0XZOIniFQimiXsZDNwaYgL96dZwC54Q30imSbAOFf3NKtepc+cXyuZf5Q1HCgbqgZ2UFFuHVcEw=="
     },
-    "@nostr-dev-kit/ndk@2.10.5": {
-      "integrity": "sha512-QEnarJL9BGCxeenSIE9jxNSDyYQYjzD30YL3sVJ9cNybNZX8tl/I1/vhEUeRRMBz/qjROLtt0M2RV68rZ205tg==",
+    "@nostr-dev-kit/ndk@2.10.7": {
+      "integrity": "sha512-cylva8jsaAGMijxAI32CnJWlzvwD4sWyl86/+RMS6xpZn4MIgeVUfBFc/pYkcfZzDP3v1Z9mIPsuiICRyvu9yQ==",
       "dependencies": [
-        "@noble/curves@1.6.0",
-        "@noble/hashes@1.5.0",
+        "@noble/curves@1.7.0",
+        "@noble/hashes@1.6.1",
         "@noble/secp256k1",
-        "@scure/base@1.1.9",
+        "@scure/base@1.2.1",
         "debug@4.3.7",
         "light-bolt11-decoder",
         "nostr-tools",
@@ -59,22 +62,22 @@
     "@scure/base@1.1.1": {
       "integrity": "sha512-ZxOhsSyxYwLJj3pLZCefNitxsj093tb2vq90mp2txoYeBqbcjDjqFhyM8eUjq/uFm6zJ+mUuqxlS2FkuSY1MTA=="
     },
-    "@scure/base@1.1.9": {
-      "integrity": "sha512-8YKhl8GHiNI/pU2VMaofa2Tor7PJRAjwQLBBuilkJ9L5+13yVbC7JO/wS7piioAvPSwR3JKM1IJ/u4xQzbcXKg=="
+    "@scure/base@1.2.1": {
+      "integrity": "sha512-DGmGtC8Tt63J5GfHgfl5CuAXh96VF/LD8K9Hr/Gv0J2lAoRGlPOMpqMpMbCTOoOJMZCk2Xt+DskdDyn6dEFdzQ=="
     },
     "@scure/bip32@1.3.1": {
       "integrity": "sha512-osvveYtyzdEVbt3OfwwXFr4P2iVBL5u1Q3q4ONBfDY/UpOuXmOlbgwc1xECEboY8wIays8Yt6onaWMUdUbfl0A==",
       "dependencies": [
         "@noble/curves@1.1.0",
         "@noble/hashes@1.3.2",
-        "@scure/base@1.1.9"
+        "@scure/base@1.1.1"
       ]
     },
     "@scure/bip39@1.2.1": {
       "integrity": "sha512-Z3/Fsz1yr904dduJD0NpiyRHhRYHdcnyh73FZWiV+/qhWi83wNJ3NWolYqCEN+ZWsUz2TWwajJggcRE9r1zUYg==",
       "dependencies": [
         "@noble/hashes@1.3.2",
-        "@scure/base@1.1.9"
+        "@scure/base@1.1.1"
       ]
     },
     "bufferutil@4.0.8": {
@@ -163,8 +166,8 @@
         "@scure/base@1.1.1"
       ]
     },
-    "meilisearch@0.45.0": {
-      "integrity": "sha512-+zCzEqE+CumY4icB0Vox180adZqaNtnr60hJWGiEdmol5eWmksfY8rYsTcz87styXC2ZOg+2yF56gdH6oyIBTA=="
+    "meilisearch@0.46.0": {
+      "integrity": "sha512-bx0tei1B+Ke0Y02pCoqmcwfpkwuDf+/ZkQDVDvb+ZfGDpWaxq9Z7sE5kc3o8zWvP6wJE7e3PoU3Oy6WINqq5bw=="
     },
     "ms@2.0.0": {
       "integrity": "sha512-Tpp60P6IUJDTuOq/5Z8cdskzJujfwqfOTkrwIwj7IRISpnkJnT6SyJ4PCPnGMoFjC9ddhal5KVIYtAt97ix05A=="
@@ -175,11 +178,11 @@
     "next-tick@1.1.0": {
       "integrity": "sha512-CXdUiJembsNjuToQvxayPZF9Vqht7hewsvy2sOWafLvi2awflj9mOC6bHIg50orX8IJvWKY9wYQ/zB2kogPslQ=="
     },
-    "node-gyp-build@4.8.2": {
-      "integrity": "sha512-IRUxE4BVsHWXkV/SFOut4qTlagw2aM8T5/vnTsmrHJvVoKueJHRc/JaFND7QDDc61kLYUJ6qlZM3sqTSyx2dTw=="
+    "node-gyp-build@4.8.4": {
+      "integrity": "sha512-LA4ZjwlnUblHVgq0oBF3Jl/6h/Nvs5fzBLwdEF4nuxnFdsfajde4WfxtJr3CaiH+F6ewcIB/q4jQ4UzPyid+CQ=="
     },
-    "nostr-tools@2.10.1": {
-      "integrity": "sha512-fnAxLi92UgyMAEw4fMEhDKzH53uBJ0WkkVPTNfX0b3bspeWWn0n5tDZtKRJbvW0wAGOPmU6LYWi/IKPOsq3p2Q==",
+    "nostr-tools@2.10.4": {
+      "integrity": "sha512-biU7sk+jxHgVASfobg2T5ttxOGGSt69wEVBC51sHHOEaKAAdzHBLV/I2l9Rf61UzClhliZwNouYhqIso4a3HYg==",
       "dependencies": [
         "@noble/ciphers",
         "@noble/curves@1.2.0",
@@ -244,10 +247,10 @@
   },
   "workspace": {
     "dependencies": [
-      "npm:@nostr-dev-kit/ndk@2.10.5",
+      "npm:@nostr-dev-kit/ndk@^2.10.7",
       "npm:chalk@5.3.0",
       "npm:date-fns@4.1.0",
-      "npm:meilisearch@0.45.0"
+      "npm:meilisearch@0.46"
     ]
   }
 }
